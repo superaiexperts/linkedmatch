@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LinkedMatch – Matrimony for LinkedIn Professionals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0a66c2;
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1c1c1c;
+      --muted: #6b7280;
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+
+    header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .cta-buttons {
+      margin-top: 30px;
+    }
+
+    .cta-buttons a {
+      text-decoration: none;
+      background: white;
+      color: var(--primary);
+      font-weight: 600;
+      padding: 12px 24px;
+      margin: 0 10px;
+      border-radius: var(--radius);
+      display: inline-block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background: #e3f2fd;
+    }
+
+    .profiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .profile-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    }
+
+    .profile-name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .profile-role {
+      font-size: 14px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .profile-details {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LinkedMatch</h1>
+    <p>Where LinkedIn Professionals Meet for Meaningful Matrimony</p>
+    <div class="cta-buttons">
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </div>
+  </header>
+
+  <section class="profiles">
+    <div class="profile-card">
+      <div class="profile-name">Amit Verma</div>
+      <div class="profile-role">Product Manager, Microsoft</div>
+      <div class="profile-details">MBA, IIM-B | Based in Bangalore | 32 yrs</div>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-name">Neha Shah</div>
+      <div class="profile-role">UX Designer, Google</div>
+      <div class="profile-details">B.Des, NID | Based in Pune | 29 yrs</div>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-name">Rahul Jain</div>
+      <div class="profile-role">Startup Founder</div>
+      <div class="profile-details">BITS Pilani | Delhi NCR | 34 yrs</div>
+    </div>
+
+    <div class="profile-card">
+      <div class="profile-name">Sneha Kulkarni</div>
+      <div class="profile-role">Data Scientist, Meta</div>
+      <div class="profile-details">MTech, IISc | Hyderabad | 30 yrs</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 LinkedMatch.com – Created for Working Professionals
+  </footer>
+
+</body>
+</html>
